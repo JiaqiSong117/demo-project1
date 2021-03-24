@@ -75,7 +75,8 @@
                         <resourceGroup>filterbubble</resourceGroup>
                         <appName>filterbubble</appName>
                         <region>westeurope</region>
-                        <linuxRuntime>tomcat 9.0-jre8</linuxRuntime>
+                        <runtime>JAVA 8-jre8</runtime>
+                        <deployment>Tomcat 9.0</deployment>
                     </configuration>
                 </plugin>
         </plugins>
