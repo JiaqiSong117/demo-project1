@@ -76,7 +76,7 @@
                         <appName>filterbubble</appName>
                         <region>westeurope</region>
                         <runtime>JAVA 8-jre8</runtime>
-                        <deployment>Tomcat 9.0</deployment>
+                        <deployment>linux</deployment>
                     </configuration>
                 </plugin>
         </plugins>
