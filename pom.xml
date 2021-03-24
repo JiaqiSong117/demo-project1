@@ -67,6 +67,17 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+                <plugin>
+                    <groupId>com.microsoft.azure</groupId>
+                    <artifactId>azure-webapp-maven-plugin</artifactId>
+                    <version>1.12.0</version>
+                    <configuration>
+                        <resourceGroup>filterbubble</resourceGroup>
+                        <appName>filterbubble</appName>
+                        <region>westeurope</region>
+                        <linuxRuntime>tomcat 9.0-jre8</linuxRuntime>
+                    </configuration>
+                </plugin>
         </plugins>
     </build>
 
