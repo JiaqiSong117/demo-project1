@@ -6,6 +6,7 @@ import java.util.Date;
 
 public class News implements Serializable {
 
+
     private int id;
     private String title;
     private String content;

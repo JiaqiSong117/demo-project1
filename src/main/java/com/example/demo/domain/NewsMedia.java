@@ -3,56 +3,78 @@ package com.example.demo.domain;
 public class NewsMedia {
 
     private int id;
-    private String mediaImg;
     private String mediaName;
-    private String mediaUrl;
+    private String introduction;
+    private String mediaFrequency;
+    private String url;
+    private String mediaFollower;
 
-    public NewsMedia(int id, String mediaImg, String mediaName, String mediaUrl) {
+    public NewsMedia(int id, String mediaName, String introduction, String mediaFrequency, String url, String mediaFollower) {
         this.id = id;
-        this.mediaImg = mediaImg;
         this.mediaName = mediaName;
-        this.mediaUrl = mediaUrl;
+        this.introduction = introduction;
+        this.mediaFrequency = mediaFrequency;
+        this.url = url;
+        this.mediaFollower = mediaFollower;
     }
 
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getMediaImg() {
-        return mediaImg;
-    }
-
-    public void setMediaImg(String mediaImg) {
-        this.mediaImg = mediaImg;
-    }
-
     public String getMediaName() {
         return mediaName;
+    }
+
+    public String getIntroduction() {
+        return introduction;
+    }
+
+    public String getMediaFrequency() {
+        return mediaFrequency;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public String getMediaFollower() {
+        return mediaFollower;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setMediaName(String mediaName) {
         this.mediaName = mediaName;
     }
 
-    public String getMediaUrl() {
-        return mediaUrl;
+    public void setIntroduction(String introduction) {
+        this.introduction = introduction;
     }
 
-    public void setMediaUrl(String mediaUrl) {
-        this.mediaUrl = mediaUrl;
+    public void setMediaFrequency(String mediaFrequency) {
+        this.mediaFrequency = mediaFrequency;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public void setMediaFollower(String mediaFollower) {
+        this.mediaFollower = mediaFollower;
     }
 
     @Override
     public String toString() {
         return "NewsMedia{" +
                 "id=" + id +
-                ", mediaImg='" + mediaImg + '\'' +
                 ", mediaName='" + mediaName + '\'' +
-                ", mediaUrl='" + mediaUrl + '\'' +
+                ", introduction='" + introduction + '\'' +
+                ", mediaFrequency='" + mediaFrequency + '\'' +
+                ", url='" + url + '\'' +
+                ", mediaFollower='" + mediaFollower + '\'' +
                 '}';
     }
 }

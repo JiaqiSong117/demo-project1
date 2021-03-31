@@ -5,7 +5,7 @@
 
 <mapper namespace="com.example.demo.dao.NewsMediaMapper">
     <select id="selectAll" resultType="com.example.demo.domain.NewsMedia">
-        select * from rec_news_media
+        select * from newsMedia
     </select>
 
 </mapper>
