@@ -73,8 +73,8 @@
         <configuration>
           <schemaVersion>v2</schemaVersion>
           <subscriptionId>8c29d498-3c1c-40b6-b2e1-e18ae7caaee2</subscriptionId>
-          <resourceGroup>demo-1617190370834-rg</resourceGroup>
-          <appName>filterbubblebackend</appName>
+          <resourceGroup>filterbubblesup</resourceGroup>
+          <appName>filterbubblespring</appName>
           <pricingTier>F1</pricingTier>
           <region>australiaeast</region>
           <runtime>
