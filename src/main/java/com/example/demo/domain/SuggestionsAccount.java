@@ -2,13 +2,19 @@ package com.example.demo.domain;
 
 public class SuggestionsAccount {
     private int id;
-    private String accountName;
-    private String accountCategory;
+    private String category;
+    private String twittername;
+    private String twitterusername;
+    private String url;
+    private String filterbubblejson;
 
-    public SuggestionsAccount(int id, String accountName, String accountCategory) {
+    public SuggestionsAccount(int id, String category, String twittername, String twitterusername, String url, String filterbubblejson) {
         this.id = id;
-        this.accountName = accountName;
-        this.accountCategory = accountCategory;
+        this.category = category;
+        this.twittername = twittername;
+        this.twitterusername = twitterusername;
+        this.url = url;
+        this.filterbubblejson = filterbubblejson;
     }
 
     public int getId() {
@@ -19,28 +25,55 @@ public class SuggestionsAccount {
         this.id = id;
     }
 
-    public String getAccountName() {
-        return accountName;
+    public String getCategory() {
+        return category;
     }
 
-    public void setAccountName(String accountName) {
-        this.accountName = accountName;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
-    public String getAccountCategory() {
-        return accountCategory;
+    public String getTwittername() {
+        return twittername;
     }
 
-    public void setAccountCategory(String accountCategory) {
-        this.accountCategory = accountCategory;
+    public void setTwittername(String twittername) {
+        this.twittername = twittername;
+    }
+
+    public String getTwitterusername() {
+        return twitterusername;
+    }
+
+    public void setTwitterusername(String twitterusername) {
+        this.twitterusername = twitterusername;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getFilterbubblejson() {
+        return filterbubblejson;
+    }
+
+    public void setFilterbubblejson(String filterbubblejson) {
+        this.filterbubblejson = filterbubblejson;
     }
 
     @Override
     public String toString() {
-        return "suggestionsAccount{" +
+        return "SuggestionsAccount{" +
                 "id=" + id +
-                ", accountName='" + accountName + '\'' +
-                ", accountCategory='" + accountCategory + '\'' +
+                ", category='" + category + '\'' +
+                ", twittername='" + twittername + '\'' +
+                ", twitterusername='" + twitterusername + '\'' +
+                ", url='" + url + '\'' +
+                ", filterbubblejson='" + filterbubblejson + '\'' +
                 '}';
     }
 }
