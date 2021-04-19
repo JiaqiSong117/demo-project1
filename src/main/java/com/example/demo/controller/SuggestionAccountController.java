@@ -3,7 +3,6 @@ package com.example.demo.controller;
 import com.example.demo.domain.SuggestionsAccount;
 import com.example.demo.service.SuggestionAccountService;
 import com.example.demo.utils.JsonData;
-import com.sun.corba.se.spi.ior.ObjectKey;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
