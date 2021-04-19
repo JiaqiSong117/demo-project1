@@ -8,13 +8,13 @@
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://filterbubblemysql.mysql.database.azure.com/newsdb?serverTimezone=UTC"/>
+                <property name="url" value="jdbc:mysql://filterbubblemysql.mysql.database.azure.com/suggestions?serverTimezone=UTC"/>
                 <property name="username" value="alan@filterbubblemysql"/>
-                <property name="password" value="896561282Mysql"/>
+                <property name="password" value="896561282Ror117"/>
             </dataSource>
         </environment>
     </environments>
     <mappers>
-        <mapper resource="mapper/newsMedia.xml"/>
+        <mapper resource="mapper/suggestionsAccount.xml"/>
     </mappers>
 </configuration>
