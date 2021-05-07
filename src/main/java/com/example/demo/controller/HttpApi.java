@@ -11,15 +11,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-
-public class HelloWorld {
+@RequestMapping(value = "getApi")
+public class HttpApi {
     @Autowired
     private HttpClient httpClient;
 
 
     //outside URL method
-    public String testHttp(){
-        String url = "";
+    @RequestMapping(value = "/TweetApi")
+    public String testHttp(String id){
+        String url = "https://publish.twitter.com/oembed?url=https://twitter.com/Interior/status/" + id + "&conversation=none&width=350&align=center&lang=en&hide_media=true";
         HttpMethod method = HttpMethod.GET;
         MultiValueMap<String,String> params = new LinkedMultiValueMap<>();
         return httpClient.client(url,method,params);

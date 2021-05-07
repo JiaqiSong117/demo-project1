@@ -1,6 +1,5 @@
 package com.example.demo.service;
 
-import com.example.demo.domain.NewsMedia;
 import com.example.demo.domain.SuggestionsAccount;
 
 import java.io.IOException;
