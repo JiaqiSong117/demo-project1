@@ -17,10 +17,10 @@ public class HttpApi {
     private HttpClient httpClient;
 
 
-    //outside URL method
+    //outside URL method 
     @RequestMapping(value = "/TweetApi")
     public String testHttp(String id){
-        String url = "https://publish.twitter.com/oembed?url=https://twitter.com/Interior/status/" + id + "&conversation=none&width=350&align=center&lang=en&hide_media=true";
+        String url = "https://publish.twitter.com/oembed?url=https://twitter.com/Interior/status/" + id + "&conversation=none&width=350&align=center&lang=en&hide_media=true&omit_script=true";
         HttpMethod method = HttpMethod.GET;
         MultiValueMap<String,String> params = new LinkedMultiValueMap<>();
         return httpClient.client(url,method,params);
