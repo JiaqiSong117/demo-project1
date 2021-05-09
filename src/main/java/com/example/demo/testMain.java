@@ -1,6 +1,8 @@
 package com.example.demo;
 
+import com.example.demo.dao.FeedbackMapper;
 import com.example.demo.dao.NewsMediaMapper;
+import com.example.demo.domain.Feedback;
 import com.example.demo.domain.NewsMedia;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -16,14 +18,14 @@ public class testMain {
 
     public static void main(String[] args) throws IOException {
         //test mybatis
-        /*String resouce = "config/mybatis-config.xml";
+        String resouce = "config/mybatis-config.xml";
         InputStream inputStream =  Resources.getResourceAsStream(resouce);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        try(SqlSession sqlSession = sqlSessionFactory.openSession()) {
-            NewsMediaMapper newsMediaMapper = sqlSession.getMapper(NewsMediaMapper.class);
-            List<NewsMedia> list = newsMediaMapper.selectAll();
-            System.out.println(list.get(1).toString());
-        }*/
+        try(SqlSession sqlSession = sqlSessionFactory.openSession(true)) {
+            FeedbackMapper feedbackMapper = sqlSession.getMapper(FeedbackMapper.class);
+            Feedback feedback = new Feedback();
+            feedbackMapper.addFeedback(feedback);
+        }
     }
 
 

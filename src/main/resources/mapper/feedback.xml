@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.FeedbackMapper">
+    <select id="selectAll" resultType="com.example.demo.domain.Feedback">
+        select * from feedback
+    </select>
+    
+    <insert id="addFeedback" parameterType="com.example.demo.domain.Feedback">
+        INSERT INTO `filterbubblega`.`feedback`
+        (`name`,
+        `email`,
+        `text`)
+        VALUES
+        (#{name,jdbcType=VARCHAR},
+         #{email,jdbcType=VARCHAR},
+         #{text,jdbcType=VARCHAR});
+    </insert>
+
+</mapper>
