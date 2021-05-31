@@ -72,7 +72,7 @@
         <version>1.12.0</version>  
         <configuration> 
           <schemaVersion>v2</schemaVersion>  
-          <subscriptionId>2b372294-c247-425d-b4eb-d1fb1aaf58ed</subscriptionId>
+          <subscriptionId>007fd815-3980-408b-ab58-a65d035b047d</subscriptionId>
           <resourceGroup>filterbubblesup</resourceGroup>  
           <appName>fiterbubblespring</appName>  
           <pricingTier>F1</pricingTier>  

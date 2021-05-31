@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.service.impl.HttpClient;
+import com.google.api.Http;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Controller;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.swing.event.CaretListener;
+
 @RestController
 @RequestMapping(value = "getApi")
 public class HttpApi {
@@ -17,7 +20,7 @@ public class HttpApi {
     private HttpClient httpClient;
 
 
-    //outside URL method 
+    //outside URL method
     @RequestMapping(value = "/TweetApi")
     public String testHttp(String id){
         String url = "https://publish.twitter.com/oembed?url=https://twitter.com/Interior/status/" + id + "&conversation=none&width=350&align=center&lang=en&hide_media=true&omit_script=true";
@@ -25,5 +28,6 @@ public class HttpApi {
         MultiValueMap<String,String> params = new LinkedMultiValueMap<>();
         return httpClient.client(url,method,params);
     }
+
 
 }
